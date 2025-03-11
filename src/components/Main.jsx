@@ -16,10 +16,10 @@ function Main() {
       <BuildingLights />
       <div className="w-full max-w-[50%] px-4 relative ">
         <div className="flex flex-col items-center gap-6 m-18 w-full h-full  ">
-          <h1 className="lg:whitespace-normal lg:w-[50rem] lg:mb-[4rem] text-center font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem] bg-gradient-to-t from-pink-500 via-pink-300 to-white bg-clip-text text-transparent uppercase animate-neon-flicker">
+          <h1 className="lg:whitespace-normal lg:w-[50rem] lg:mb-[4rem] text-center font-semibold text-[1.5rem] leading-[2.5rem] md:text-[2rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem] bg-gradient-to-t from-pink-500 via-pink-300 to-white bg-clip-text text-transparent uppercase animate-neon-flicker">
             welcome player1
           </h1>
-          <h4 className="lg:whitespace-normal lg:w-[30rem]  lg:mb-[4rem] text-[1rem] lg:text-[2rem] leading-normal text-white uppercase">
+          <h4 className="lg:whitespace-normal whitespace-normal lg:w-[30rem] w-[15rem]  lg:mb-[4rem] text-[1rem] lg:text-[2rem] leading-normal text-white uppercase">
             press enter to start the game
           </h4>
           <Button
@@ -29,7 +29,7 @@ function Main() {
             Start
           </Button>
           <div className="h-[12rem] items-center">
-            <h1 className="uppercase mt-[13rem] text-white text-xl lg:text-2xl">
+            <h1 className="uppercase mt-[6rem] lg:mt-[12rem] text-white text-xs lg:text-2xl">
               Follow me at
             </h1>
             <FollowButtons />

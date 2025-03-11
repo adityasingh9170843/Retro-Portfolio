@@ -23,7 +23,7 @@ function Button({ className, href, onClick, children }) {
           damping: 8,
         },
       }}
-      className={`relative flex items-center p-7 lg:w-60 lg:h-40 justify-center 
+      className={`relative w-40 h-30 flex items-center p-7 lg:w-60 lg:h-40 justify-center 
       cursor-pointer  group  ${className || ""}`}
       onClick={onClick}
     >
