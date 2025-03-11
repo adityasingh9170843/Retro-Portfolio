@@ -3,8 +3,14 @@ import Button from "./design/Button";
 import start from "../assets/svg/start.svg";
 import BuildingLights from "./design/BuildingLights";
 import FollowButtons from "./design/FollowButtons";
+import { useNavigate } from "react-router-dom";
 function Main() {
- 
+  const navigate = useNavigate();
+  const handleStartClick = () => {
+    setTimeout(() => {
+      navigate("/initializing");
+    }, 800);
+  };
   return (
     <div className=" relative  m-c flex  items-center ">
       <BuildingLights />
@@ -16,12 +22,17 @@ function Main() {
           <h4 className="lg:whitespace-normal lg:w-[30rem]  lg:mb-[4rem] text-[1rem] lg:text-[2rem] leading-normal text-white uppercase">
             press enter to start the game
           </h4>
-          <Button className={" lg:mb-[4rem] mt-[2rem]"} >Start</Button>
+          <Button
+            className={" lg:mb-[4rem] mt-[2rem]"}
+            onClick={handleStartClick}
+          >
+            Start
+          </Button>
           <div className="h-[12rem] items-center">
             <h1 className="uppercase mt-[13rem] text-white text-xl lg:text-2xl">
               Follow me at
             </h1>
-            <FollowButtons/>
+            <FollowButtons />
           </div>
         </div>
       </div>

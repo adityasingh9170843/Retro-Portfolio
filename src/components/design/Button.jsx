@@ -1,15 +1,30 @@
-import React from "react";
 import buttonSVG from "../../assets/svg/buttonSVG.svg";
 import start from "../../assets/svg/start.svg";
-import { useState } from "react";
-import coin from "../../assets/svg/coin.svg";
+import { motion } from "motion/react";
 function Button({ className, href, onClick, children }) {
-  
   return (
-    <button
+    <motion.button
+      whileHover={{
+        scale: 1.1,
+        rotate: 2,
+        transition: {
+          type: "spring",
+          stiffness: 300,
+          damping: 10,
+        },
+      }}
+      whileTap={{
+        scale: 0.95,
+        rotate: 0,
+
+        transition: {
+          type: "spring",
+          stiffness: 400,
+          damping: 8,
+        },
+      }}
       className={`relative flex items-center p-7 lg:w-60 lg:h-40 justify-center 
-      cursor-pointer  group transition-all duration-300 ease-in-out 
-      hover:translate-y-[3px]  active:translate-y-[5px] ${className || ""}`}
+      cursor-pointer  group  ${className || ""}`}
       onClick={onClick}
     >
       <img
@@ -31,8 +46,7 @@ function Button({ className, href, onClick, children }) {
         transition-transform duration-300 ease-in-out group-hover:translate-x-4"
         alt="Start Icon"
       />
-
-    </button>
+    </motion.button>
   );
 }
 

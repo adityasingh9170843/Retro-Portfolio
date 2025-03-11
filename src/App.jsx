@@ -1,11 +1,15 @@
-
+import {Routes , Route } from 'react-router-dom'
 import Main from './components/Main'
+import InitializingPage from './components/InitializingPage'
 function App() {
   
 
   return (
     <div>
-      <Main/>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/InitializingPage" element={<InitializingPage/>} />
+      </Routes>
     </div>
   )
 }
