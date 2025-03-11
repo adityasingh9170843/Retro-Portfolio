@@ -2,27 +2,82 @@ import React from "react";
 import facebook from "../../assets/svg/facebook.svg";
 import instagram from "../../assets/svg/instagram.svg";
 import linkedin from "../../assets/svg/linkedin.svg";
+import { motion } from "motion/react";
 function FollowButtons() {
   return (
     <div className="flex lg:mt-7 mt-7 lg:gap-19  gap-10 justify-center ">
-      <button
-        className="w-[40px] h-[40px] cursor-pointer transition-all duration-300 ease-in-out 
-      hover:translate-y-[3px]  active:translate-y-[5px]"
+      <motion.button
+        whileHover={{
+          scale: 1.1,
+          rotate: 2,
+          transition: {
+            type: "spring",
+            stiffness: 300,
+            damping: 10,
+          },
+        }}
+        whileTap={{
+          scale: 0.95,
+          rotate: 0,
+
+          transition: {
+            type: "spring",
+            stiffness: 400,
+            damping: 8,
+          },
+        }}
+        className="w-[60px] h-[50px] cursor-pointer "
       >
         <img src={facebook} alt="" />
-      </button>
-      <button
-        className="w-[40px] h-[40px] cursor-pointer transition-all duration-300 ease-in-out 
-      hover:translate-y-[3px]  active:translate-y-[5px]"
+      </motion.button>
+      <motion.button
+        whileHover={{
+          scale: 1.1,
+          rotate: 2,
+          transition: {
+            type: "spring",
+            stiffness: 300,
+            damping: 10,
+          },
+        }}
+        whileTap={{
+          scale: 0.95,
+          rotate: 0,
+
+          transition: {
+            type: "spring",
+            stiffness: 400,
+            damping: 8,
+          },
+        }}
+        className="w-[60px] h-[50px] cursor-pointer"
       >
         <img src={instagram} alt="" />
-      </button>
-      <button
-        className="w-[40px] h-[40px] cursor-pointer transition-all duration-300 ease-in-out 
-      hover:translate-y-[3px]  active:translate-y-[5px]"
+      </motion.button>
+      <motion.button
+        whileHover={{
+          scale: 1.1,
+          rotate: 2,
+          transition: {
+            type: "spring",
+            stiffness: 300,
+            damping: 10,
+          },
+        }}
+        whileTap={{
+          scale: 0.95,
+          rotate: 0,
+
+          transition: {
+            type: "spring",
+            stiffness: 400,
+            damping: 8,
+          },
+        }}
+        className="w-[60px] h-[50px] cursor-pointer "
       >
         <img src={linkedin} alt="" />
-      </button>
+      </motion.button>
     </div>
   );
 }

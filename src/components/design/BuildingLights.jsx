@@ -15,7 +15,7 @@ function BuildingLights({ lights = defaultLights }) {
       {lights.map((light, index) => (
         <div
           key={index}
-          className="absolute w-2 h-2 bg-white rounded-full opacity-70 animate-flicker"
+          className="absolute z-[0] w-2 h-2 bg-white rounded-full opacity-70 animate-flicker"
           style={{
             top: light.top,
             left: light.left,

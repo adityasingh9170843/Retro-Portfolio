@@ -24,7 +24,7 @@ function Button({ className, href, onClick, children }) {
         },
       }}
       className={`relative w-40 h-30 flex items-center p-7 lg:w-60 lg:h-40 justify-center 
-      cursor-pointer  group  ${className || ""}`}
+      cursor-pointer z-2 group  ${className || ""}`}
       onClick={onClick}
     >
       <img
