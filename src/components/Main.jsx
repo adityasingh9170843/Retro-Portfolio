@@ -8,7 +8,7 @@ function Main() {
   const navigate = useNavigate();
   const handleStartClick = () => {
     setTimeout(() => {
-      navigate("/initializing");
+      navigate("InitializingPage");
     }, 800);
   };
   return (
