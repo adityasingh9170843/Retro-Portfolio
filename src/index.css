@@ -1,31 +1,29 @@
 @import "tailwindcss";
 
 @layer base {
-    
-    html {
-      font-family: "Press Start 2P", system-ui;
-      font-weight: 100;
-      box-sizing: border-box;
-    }
-   
-    body {
-      margin: 0;
-      padding: 0;
-    }
+  html {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 100;
+    box-sizing: border-box;
   }
 
-.m-c {
-    background-image: url("./assets/bg.png"); /* Ensure the correct path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
 }
 
-
-
+.m-c {
+  background-image: url("./assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;       
+  min-height: 100vh;  
+}
 
 @keyframes coin-drop {
   0% {
@@ -48,30 +46,21 @@
 @keyframes neon-flicker {
   0%,
   100% {
-    text-shadow: 
-      0 0 2px #fff,
-      0 0 10px #ff00ff,
-      0 0 20px #ff00ff,
+    text-shadow: 0 0 2px #fff, 0 0 10px #ff00ff, 0 0 20px #ff00ff,
       0 0 40px #ff00ff;
   }
   10% {
     text-shadow: none;
   }
   20% {
-    text-shadow:
-      0 0 2px #fff,
-      0 0 10px #ff00ff,
-      0 0 20px #ff00ff,
+    text-shadow: 0 0 2px #fff, 0 0 10px #ff00ff, 0 0 20px #ff00ff,
       0 0 40px #ff00ff;
   }
   30% {
     text-shadow: none;
   }
   40% {
-    text-shadow:
-      0 0 2px #fff,
-      0 0 10px #ff00ff,
-      0 0 20px #ff00ff,
+    text-shadow: 0 0 2px #fff, 0 0 10px #ff00ff, 0 0 20px #ff00ff,
       0 0 40px #ff00ff;
   }
 }
@@ -81,9 +70,15 @@
 }
 
 @keyframes flicker {
-  0% { opacity: 0.2; }
-  50% { opacity: 1; }
-  100% { opacity: 0.2; }
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
 }
 
 .animate-flicker {

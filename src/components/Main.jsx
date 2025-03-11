@@ -12,10 +12,10 @@ function Main() {
     }, 800);
   };
   return (
-    <div className=" relative  m-c flex  items-center ">
+    <div className=" relative  m-c flex min-h-screen  items-center overflow-x-hidden ">
       <BuildingLights />
-      <div className="w-[50%] relative ">
-        <div className="flex flex-col items-center gap-6 m-18 w-[100%] h-full  ">
+      <div className="w-full max-w-[50%] px-4 relative ">
+        <div className="flex flex-col items-center gap-6 m-18 w-full h-full  ">
           <h1 className="lg:whitespace-normal lg:w-[50rem] lg:mb-[4rem] text-center font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem] bg-gradient-to-t from-pink-500 via-pink-300 to-white bg-clip-text text-transparent uppercase animate-neon-flicker">
             welcome player1
           </h1>
