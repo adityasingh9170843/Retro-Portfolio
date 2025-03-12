@@ -25,8 +25,8 @@ function Initializing() {
   }, [navigate]);
 
   return (
-    <div className="relative w-full h-screen bg-black">
-      <h1 className="text-white text-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div className="relative w-full h-screen bg-black flex items-center justify-center overflow-hidden">
+      <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-mono">
         Initializing{dots}
       </h1>
       <Waves />
