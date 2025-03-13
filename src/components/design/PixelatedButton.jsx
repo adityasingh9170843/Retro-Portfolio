@@ -34,17 +34,27 @@ function PixelatedButton({ className, href, onClick, children, showIcon }) {
         alt="Button Background"
       />
 
-      <img
-        className="absolute inset-0 w-{full} h-{full}"
+      <motion.img
+        className="absolute inset-y-3.5 w-{full} h-{full}"
         width={300}
         height={200}
         src={buttonSVG}
         alt="Purple Border"
+        whileTap={{
+            scale: 0.95,
+            rotate: 0,
+    
+            transition: {
+              type: "spring",
+              stiffness: 400,
+              damping: 8,
+            },
+          }}
       />
 
       <span
         className="relative bg-gradient-to-t from-pink-500 via-pink-300 to-white 
-      bg-clip-text text-transparent text-[1.5rem] mb-4 uppercase"
+      bg-clip-text text-transparent text-[1.5rem] mb-0 uppercase"
       >
         {children}
       </span>
