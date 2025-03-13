@@ -1,7 +1,8 @@
 import buttonSVG from "../../assets/svg/buttonSVG.svg";
 import start from "../../assets/svg/start.svg";
 import { motion } from "motion/react";
-function Button({ className, href, onClick, children }) {
+function Button({ className, href, onClick, children,showIcon }) {
+  
   return (
     <motion.button
       whileHover={{
@@ -40,12 +41,14 @@ function Button({ className, href, onClick, children }) {
         {children}
       </span>
 
-      <img
-        src={start}
-        className="absolute right-[-6rem] lg:right-[-9rem] w-[80px] lg:w-[90px] 
-        transition-transform duration-300 ease-in-out group-hover:translate-x-4"
-        alt="Start Icon"
-      />
+      {showIcon && (
+        <img
+          src={start}
+          className="absolute right-[-6rem] lg:right-[-9rem] w-[80px] lg:w-[90px] 
+          transition-transform duration-300 ease-in-out group-hover:translate-x-4"
+          alt="Start Icon"
+        />
+      )}
     </motion.button>
   );
 }

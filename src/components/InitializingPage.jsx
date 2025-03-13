@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Waves from "./design/Waves";
-import BuildingLights from "./design/BuildingLights";
+
 import { BackgroundCircles } from "./design/Galaxy";
 import GalaxyLights from "./design/GalaxyLights";
 import { useNavigate } from "react-router-dom";
@@ -15,7 +15,7 @@ function Initializing() {
 
     
     const redirectTimeout = setTimeout(() => {
-      navigate("/"); 
+      navigate("/LevelOne"); 
     }, 4500);
 
     return () => {
@@ -26,7 +26,7 @@ function Initializing() {
 
   return (
     <div className="relative w-full h-screen bg-black flex items-center justify-center overflow-hidden">
-      <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-mono">
+      <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
         Initializing{dots}
       </h1>
       <Waves />
