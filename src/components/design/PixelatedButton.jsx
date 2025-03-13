@@ -1,8 +1,8 @@
-import buttonSVG from "../../assets/svg/buttonSVG.svg";
+import whitebutton from "/src/assets/svg/whitebutton.svg";
+import buttonSVG from "/src/assets/svg/buttonSVG.svg";
 import start from "../../assets/svg/start.svg";
 import { motion } from "motion/react";
-function Button({ className, href, onClick, children,showIcon }) {
-  
+function PixelatedButton({ className, href, onClick, children, showIcon }) {
   return (
     <motion.button
       whileHover={{
@@ -29,14 +29,22 @@ function Button({ className, href, onClick, children,showIcon }) {
       onClick={onClick}
     >
       <img
-        className="absolute   inset-0 w-full h-full"
-        src={buttonSVG}
+        className="absolute inset-0 w-full h-full"
+        src={whitebutton}
         alt="Button Background"
+      />
+
+      <img
+        className="absolute inset-0 w-{full} h-{full}"
+        width={300}
+        height={200}
+        src={buttonSVG}
+        alt="Purple Border"
       />
 
       <span
         className="relative bg-gradient-to-t from-pink-500 via-pink-300 to-white 
-      bg-clip-text text-transparent text-[1.5rem] mb-1 uppercase"
+      bg-clip-text text-transparent text-[1.5rem] mb-4 uppercase"
       >
         {children}
       </span>
@@ -53,4 +61,4 @@ function Button({ className, href, onClick, children,showIcon }) {
   );
 }
 
-export default Button;
+export default PixelatedButton;

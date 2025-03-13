@@ -2,7 +2,7 @@ import React from "react";
 import Waves from "./design/Waves";
 import { BackgroundCircles } from "./design/Galaxy";
 import GalaxyLights from "./design/GalaxyLights";
-import Button from "./design/Button";
+import PixelatedButton from "./design/PixelatedButton";
 function LevelOne() {
     
   return (
@@ -13,9 +13,9 @@ function LevelOne() {
       <h2 className="text-white text-2xl mt-6 sm:text-3xl md:text-4xl lg:text-5xl ">know about me</h2>
       <Waves />
 
-      <Button showIcon={false} className={"mt-4 lg:mt-8"}>
+      <PixelatedButton showIcon={false} className={"mt-4 lg:mt-12"}>
         Start
-      </Button>
+      </PixelatedButton>
 
       <BackgroundCircles />
       <GalaxyLights />
