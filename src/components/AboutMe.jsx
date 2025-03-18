@@ -1,7 +1,9 @@
 import React from "react";
 import ProfileImage from "./design/ProfileImage";
 import NextPage from "./design/NextPage";
+import { useNavigate } from "react-router-dom";
 function AboutMe() {
+  
   return (
     <div className="relative aboutMe-container flex flex-row justify-center items-center">
       <h1 className="absolute top-40 text-4xl md:text-5xl font-bold  bg-gradient-to-t from-pink-500 via-pink-300 to-white bg-clip-text text-transparent uppercase animate-neon-flicker ">it's Aditya !!</h1>
@@ -16,7 +18,7 @@ function AboutMe() {
           </p>
         </div>
       </div>
-      <NextPage className="top-[48%] left-[85%]"  />
+      <NextPage className="top-[48%] left-[85%]"   />
     </div>
   );
 }

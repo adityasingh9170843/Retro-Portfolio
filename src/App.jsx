@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/InitializingPage" element={<InitializingPage/>} />
         <Route path="/LevelOne" element={<LevelOne/>} />
-        <Route path="/AboutMe" element={<AboutMe/>} />
+        <Route path="/LevelOne/AboutMe" element={<AboutMe/>} />
       </Routes>
     </div>
   )
