@@ -25,6 +25,16 @@
   min-height: 100vh;  
 }
 
+
+.aboutMe-container{
+  background-image: url("./assets/AboutMe.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;       
+  min-height: 100vh;
+}
+
 @keyframes coin-drop {
   0% {
     transform: translateY(-150%);

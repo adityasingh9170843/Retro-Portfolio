@@ -25,7 +25,7 @@ function Main() {
           <Button className="mt-4 lg:mt-8" onClick={handleStartClick}>
             Start
           </Button>
-          <div className="mt-4 lg:mt-8   text-center">
+          <div className="mt-4 lg:mt-8 text-center">
             <h1 className="uppercase text-white text-xs md:text-sm lg:text-lg">
               Follow me at
             </h1>
