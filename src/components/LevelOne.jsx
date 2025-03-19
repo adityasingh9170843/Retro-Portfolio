@@ -9,7 +9,7 @@ function LevelOne() {
   const handleStartClick = () => {
     setTimeout(() => {
       navigate("AboutMe");
-    }, 10);
+    }, 900);
   };
   return (
     <div className="z-100 relative w-full h-screen bg-black flex flex-col items-center justify-center overflow-hidden uppercase">
