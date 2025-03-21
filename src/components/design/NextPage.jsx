@@ -3,11 +3,11 @@ import { motion } from "framer-motion"; // Import Framer Motion
 import astronautImg from "../../assets/astro.png"; 
 import chatBubble from "../../assets/svg/chatbox.svg"; 
 
-function NextPage({ onclick, className }) {
+function NextPage({ onClick, className }) {
   return (
     <motion.div
       className={`absolute flex flex-col items-center w-[100px] md:w-[100px] lg:w-[120px] ${className}`}
-      onClick={onclick}  
+      onClick={onClick}  
       whileHover={{
         scale: 1.05,
         y: -10,

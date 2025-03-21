@@ -8,7 +8,7 @@ function AboutMe() {
   const handleClick = () => {
     setTimeout(() => {
       navigate("/LevelTwo");
-    }, 100);
+    }, 300);
   };
   return (
     <div className="relative aboutMe-container flex flex-row justify-center items-center">
@@ -24,7 +24,7 @@ function AboutMe() {
           </p>
         </div>
       </div>
-      <NextPage onClick={handleClick} className="top-[58%] left-[85%]"   />
+      <NextPage onClick={handleClick} className="top-[48%] left-[85%]"   />
     </div>
   );
 }
