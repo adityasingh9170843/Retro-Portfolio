@@ -3,6 +3,7 @@ import Main from './components/Main'
 import InitializingPage from './components/InitializingPage'
 import LevelOne from './components/LevelOne'
 import AboutMe from './components/AboutMe'
+import LevelTwo from './components/LevelTwo'
 function App() {
   
 
@@ -12,7 +13,8 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/InitializingPage" element={<InitializingPage/>} />
         <Route path="/LevelOne" element={<LevelOne/>} />
-        <Route path="/LevelOne/AboutMe" element={<AboutMe/>} />
+        <Route path="/AboutMe" element={<AboutMe/>} />
+        <Route path="/LevelTwo" element={<LevelTwo/>} />
       </Routes>
     </div>
   )
