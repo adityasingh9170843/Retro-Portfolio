@@ -19,7 +19,7 @@ function LevelTwo() {
         <h2 className="text-white text-2xl mt-6 sm:text-3xl md:text-4xl lg:text-5xl ">
           Explore my skills
         </h2>
-        <PixelatedButton showIcon={false} className={"mt-4 lg:mt-12"}>
+        <PixelatedButton showIcon={false} className={"mt-3 lg:mt-12"}>
         Start
       </PixelatedButton>
       </div>
