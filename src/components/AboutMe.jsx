@@ -19,8 +19,8 @@ function AboutMe() {
         </div>
         <div className="flex items-center ml-30">
         <p className="text-2xl leading-loose text-white uppercase ">
-            I am a third-year undergrad student studying in some Institute of Technology, 
-            somewhere. I am from the city of joy, CityName. I completed my +2 from some school.
+            I am a pg student, 
+            I completed my +2 from some school.
           </p>
         </div>
       </div>
